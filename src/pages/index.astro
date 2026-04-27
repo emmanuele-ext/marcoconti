@@ -1,0 +1,148 @@
+---
+import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
+import Base from '../layouts/Base.astro';
+import marcoconti from '../content/images/marcoconti.png';
+
+const articles = (await getCollection('articles', ({ data }) => !data.draft))
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+
+const fmt = new Intl.DateTimeFormat('it-IT', { year: 'numeric', month: 'long', day: 'numeric' });
+---
+
+<Base title="Le cose che mi ha insegnato Marco Conti">
+  <section class="intro" aria-label="Introduzione">
+    <Image
+      src={marcoconti}
+      alt="Marco Conti"
+      class="portrait"
+      width={240}
+      loading="eager"
+    />
+    <p class="intro-text">
+      Marco Conti insegna cose che restano. Queste sono alcune di quelle.
+    </p>
+  </section>
+
+  <section aria-label="Articoli">
+    {articles.length === 0 && (
+      <p class="empty">Nessun articolo ancora. Inizia a scrivere.</p>
+    )}
+
+    <ol class="article-list" role="list">
+      {articles.map((article) => (
+        <li class="article-item">
+          <a href={`/${article.id}`} class="article-link">
+            <span class="article-title">{article.data.title}</span>
+            <time class="article-date" datetime={article.data.date.toISOString()}>
+              {fmt.format(article.data.date)}
+            </time>
+          </a>
+          {article.data.description && (
+            <p class="article-description">{article.data.description}</p>
+          )}
+        </li>
+      ))}
+    </ol>
+  </section>
+</Base>
+
+<style>
+  .intro {
+    margin-bottom: var(--space-8);
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: var(--space-8);
+    align-items: start;
+  }
+
+  @media (max-width: 560px) {
+    .intro {
+      grid-template-columns: 1fr;
+      gap: var(--space-6);
+    }
+  }
+
+  .portrait {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: grayscale(100%);
+  }
+
+  .intro-text {
+    font-family: var(--font-display);
+    font-size: var(--text-xl);
+    font-weight: 200;
+    color: var(--color-muted);
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    border-left: 1px solid var(--color-border);
+    padding-left: var(--space-6);
+    padding-top: var(--space-2);
+  }
+
+  .article-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .article-item {
+    border-top: 1px solid var(--color-border);
+  }
+
+  .article-item:last-child {
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .article-link {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: baseline;
+    gap: var(--space-4);
+    padding-block: var(--space-6);
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .article-title {
+    font-family: var(--font-display);
+    font-size: var(--text-xl);
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--color-text);
+    transition: opacity 0.15s;
+  }
+
+  .article-link:hover .article-title,
+  .article-link:focus-visible .article-title {
+    opacity: 0.6;
+  }
+
+  .article-date {
+    font-family: var(--font-mono);
+    font-size: var(--text-xs);
+    color: var(--color-muted);
+    letter-spacing: 0.08em;
+    white-space: nowrap;
+  }
+
+  .article-description {
+    padding-bottom: var(--space-4);
+    margin-top: calc(var(--space-2) * -1);
+    font-size: var(--text-sm);
+    font-weight: 300;
+    color: var(--color-muted);
+    line-height: 1.7;
+    letter-spacing: 0.01em;
+  }
+
+  .empty {
+    color: var(--color-muted);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-size: var(--text-xs);
+  }
+</style>
