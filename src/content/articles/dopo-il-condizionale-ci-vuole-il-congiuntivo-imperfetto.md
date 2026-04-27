@@ -5,9 +5,9 @@ date: 2024-07-14
 draft: false
 ---
 
-Marco corregge senza che sembri una correzione. È una sua cosa.
+Eravamo in ufficio. Un collega stava parlando — non ricordo di cosa — e a un certo punto ha detto qualcosa tipo: *«potrebbe essere possibile che sia così»*.
 
-Una sera qualcuno — non ricordo chi — aveva detto qualcosa tipo: *«potrebbe essere possibile che sia così»*. E lui, con tutta la calma del mondo: *«potrebbe essere possibile che **fosse** così»*. Stessa frase. Una parola diversa. E poi ha spiegato perché.
+Marco lo ha corretto sul momento, con quella sua aria da eroe tranquillo: *«potrebbe essere possibile che **fosse** così»*. Stessa frase. Una parola diversa. Il collega ha annuito senza capire del tutto. Marco ha sorriso e ha spiegato perché.
 
 ## La regola
 
