@@ -1,7 +1,7 @@
 ---
 title: "Dopo il Condizionale ci vuole il Congiuntivo Imperfetto"
 description: "Non era una lezione di grammatica. Era una lezione su come funziona davvero l'italiano."
-date: 2024-07-14
+date: 2026-01-21
 draft: false
 ---
 

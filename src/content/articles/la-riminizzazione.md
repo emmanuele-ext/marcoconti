@@ -1,7 +1,7 @@
 ---
 title: "La Riminizzazione"
 description: "Una parola precisa per un fenomeno che tutti riconoscono ma quasi nessuno sa nominare."
-date: 2024-06-01
+date: 2025-11-03
 draft: false
 ---
 
