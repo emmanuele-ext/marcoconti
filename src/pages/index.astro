@@ -32,7 +32,7 @@ const fmt = new Intl.DateTimeFormat('it-IT', { year: 'numeric', month: 'long', d
     <ol class="article-list" role="list">
       {articles.map((article) => (
         <li class="article-item">
-          <a href={`${import.meta.env.BASE_URL}/${article.id}`} class="article-link">
+          <a href={`/${article.id}`} class="article-link">
             <span class="article-title">{article.data.title}</span>
             <time class="article-date" datetime={article.data.date.toISOString()}>
               {fmt.format(article.data.date)}
