@@ -5,15 +5,15 @@ date: 2024-06-01
 draft: false
 ---
 
-*riminizzazione*, s. f. (spreg.) — Il dilagare di un modello chiassoso e deturpante, nel quale frotte di turisti si affollano in piacevoli luoghi di villeggiatura.
-
 Marco mi stava accompagnando in stazione. Eravamo a Rimini, tra le strade e le viuzze del centro, e a un certo punto — guardandosi attorno — ha tirato fuori questa parola.
 
 Non l'aveva cercata. Era lì, nel contesto. Come sempre con lui.
 
-«La riminizzazione», ha detto. «L'ha inventata un albergatore della val Badia che ama la montagna e combatte per difenderla da decenni.»
+«La riminizzazione», ha detto.
 
-Non è una parola contro Rimini. È una parola contro un *modello*. Un modo di colonizzare i luoghi con l'intrattenimento, di trasformare il mare — elemento della natura da contemplare — in uno spazio aperto dove *fare qualcosa*. Sempre qualcosa. Mai niente.
+Il termine — *riminizzazione*, o *rimenizzazione* — è un neologismo dispregiativo nato negli anni '80. Indica il dilagare di un modello di urbanizzazione selvaggia, cementificazione eccessiva e sfruttamento turistico intensivo, prendendo a esempio il rapido sviluppo edilizio della costa riminese nel secondo dopoguerra.
+
+Non è una parola contro Rimini. È una parola contro un *modello*. Un modo di colonizzare i luoghi con il cemento e l'intrattenimento, di trasformare il mare — elemento della natura da contemplare — in uno spazio aperto dove *fare qualcosa*. Sempre qualcosa. Mai niente.
 
 > Il mare non è più un posto dove nuotare o guardare l'orizzonte. È uno sfondo per le attività.
 
